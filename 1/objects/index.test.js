@@ -1,4 +1,4 @@
-const { simple, deleteByArg, combine } = require('./index')
+const { simple, deleteByArg, combine, countProperties } = require('./index')
 
 
 test('simple', () => {
@@ -31,4 +31,9 @@ test('combine', () => {
   expect(combine({}, {})).toEqual({})
   expect(combine(null, {})).toEqual('invalid')
   expect(combine({}, null)).toEqual('invalid')
+})
+
+test('countProperties', () => {
+  expect(countProperties({})).toEqual(0)
+  expect(countProperties({name: 'Ann', age: 12})).toEqual(2)
 })

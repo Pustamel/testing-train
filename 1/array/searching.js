@@ -10,7 +10,7 @@ function findString (search) {
 // Задача 2. Написать функцию findAndDelete, которая принимает на вход строку search
 // Функция должна искать элемент в массиве kitchen и удалять его
 // возвращать массив
-function findAndDelete(search) {
+function findAndDelete (search) {
   const kitchen = ['plate', 'spoon', 'pot', 'table']
   //решение
   return kitchen
@@ -19,10 +19,23 @@ function findAndDelete(search) {
 // Задача 3. Написать функцию findAndReplace, которая принимает на вход строку search и массив
 // Функция должна в массиве kitchen находить позицию по индексу (index) и заменять оставшиеся элементы на элементы из массива arr
 // вернуть массив kitchen
-function findAndReplace(index, arr) {
+function findAndReplace (index, arr) {
   const kitchen = ['plate', 'spoon', 'pot', 'table']
   //решение
   return kitchen
 }
 
-module.exports = { findString, findAndDelete, findAndReplace };
+// Задача 4. Написать функцию filterEvenNumbers, которая принимает на вход массив чисел arr.
+// Вернуть новый массив, содержащий только четные числа.
+function filterEvenNumbers (arr) {
+  // решение
+  return []
+}
+
+// Задача 5. Написать функцию squareNumbers, которая принимает на вход массив чисел arr.
+// вернуть массив, где каждое число возведено в квадрат.
+function squareNumbers (arr) {
+  // решение
+}
+
+module.exports = { findString, findAndDelete, findAndReplace, filterEvenNumbers, squareNumbers }

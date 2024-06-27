@@ -34,4 +34,10 @@ function combine (obj1, obj2) {
   //решение
 }
 
-module.exports = { simple, deleteByArg, combine }
+//Задача 4. Написать функцию countProperties, которая принимает на вход объект и выводит количество его свойств.
+// Объект (obj) может быть пустым {}
+function countProperties (obj) {
+  // решение
+}
+
+module.exports = { simple, deleteByArg, combine, countProperties }
